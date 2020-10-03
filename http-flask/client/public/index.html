@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TodoList</title>
+  <style>
+    .button {
+      background: #074494;
+      color: #ffffff;
+      border-radius: 8px;
+      padding: 4px 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>ToDo list application</h1>
+  <div id="content-list">
+
+  </div>
+  <div class="add-item">
+    <input id="input-field" type="text" name="task"/>
+    <span id="create-task-btn" class="button">Add Task</span>
+  </div>
+  <script>
+    const baseUrl = "http://127.0.0.1:8000"
+    const contentDiv = document.querySelector("#content-list");
+    fetch(`${baseUrl}/todo/`)
+    .then(response => response.json())
+    .then(data => {
+      const text = data.map(item => {
+        const doneLabel = item.done ? "[/]" : "[ ]"
+        return `<li>${doneLabel} ${item.id}: ${item.task}</li>`
+      })
+      .reduce((acc, item) => `${acc} ${item}`)
+      contentDiv.innerHTML = `<ul>${text}</ul>`;
+    })
+    .catch(err => {
+      contentDiv.textContent = err;
+      console.log(err);
+      alert(err.toString())
+    })
+
+    const inputField = document.querySelector("#input-field");
+    const addButton = document.querySelector("#create-task-btn");
+    addButton.onclick = function(v) {
+      if (!inputField.value) return
+
+      const task = {'task': inputField.value}
+      fetch(`${baseUrl}/todo/`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: JSON.stringify(user)
+      })
+      .then(response -> response.json())
+      .then()
+    }
+  </script>
+</body>
+</html>
