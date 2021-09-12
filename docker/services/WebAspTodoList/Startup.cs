@@ -10,10 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-// using Microsoft.EntityFrameworkCore;
-// using http_dotnet_mvc_core.Models;
 
-namespace http_dotnet_mvc_core
+namespace WebAspTodoList
 {
     public class Startup
     {
@@ -27,8 +25,6 @@ namespace http_dotnet_mvc_core
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // services.AddDbContext<TodoContext>(opt =>
-            //    opt.UseInMemoryDatabase("TodoList"));
             services.AddControllers();
         }
 

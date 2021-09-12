@@ -5,7 +5,10 @@ const options = {
   port: 8000,
   host: '127.0.0.1',
   method: 'GET',
-  path: '/some/path/segments/'
+  path: '/some/path/segments/',
+  headers: {
+	  "Some-Header": 'test'
+  }
 };
 const request = http.request(options, (socket) => {
   console.log('got connected');

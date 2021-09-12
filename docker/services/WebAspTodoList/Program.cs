@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace http_dotnet_mvc_core
+namespace WebAspTodoList
 {
     public class Program
     {

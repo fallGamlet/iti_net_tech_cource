@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  web-asp:
+    build: ./services/WebAspTodoList
+    ports:
+      - 5000:80
+      - 5001:443

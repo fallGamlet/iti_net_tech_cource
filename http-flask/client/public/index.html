@@ -24,12 +24,13 @@
     <span id="create-task-btn" class="button">Add Task</span>
   </div>
   <script>
-    const baseUrl = "http://127.0.0.1:8000"
+    const baseUrl = ""
     const contentDiv = document.querySelector("#content-list");
     fetch(`${baseUrl}/todo/`)
     .then(response => response.json())
     .then(data => {
-      const text = data.map(item => {
+      const text = data
+      .map(item => {
         const doneLabel = item.done ? "[/]" : "[ ]"
         return `<li>${doneLabel} ${item.id}: ${item.task}</li>`
       })
@@ -39,7 +40,7 @@
     .catch(err => {
       contentDiv.textContent = err;
       console.log(err);
-      alert(err.toString())
+      // alert(err.toString())
     })
 
     const inputField = document.querySelector("#input-field");
@@ -55,7 +56,7 @@
         },
         body: JSON.stringify(user)
       })
-      .then(response -> response.json())
+      .then(response => response.json())
       .then()
     }
   </script>
