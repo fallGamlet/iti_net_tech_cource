@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/fallgamlet/.dotnet/store/|arch|/|tfm|",
+      "/home/fallgamlet/.nuget/packages"
+    ]
+  }
+}

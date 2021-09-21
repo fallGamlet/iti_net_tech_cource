@@ -1,0 +1,16 @@
+/home/fallgamlet/Projects/ITI/net_tech_cource/tcp-dotnet/Server/bin/Debug/net5.0/Server
+/home/fallgamlet/Projects/ITI/net_tech_cource/tcp-dotnet/Server/bin/Debug/net5.0/Server.deps.json
+/home/fallgamlet/Projects/ITI/net_tech_cource/tcp-dotnet/Server/bin/Debug/net5.0/Server.runtimeconfig.json
+/home/fallgamlet/Projects/ITI/net_tech_cource/tcp-dotnet/Server/bin/Debug/net5.0/Server.runtimeconfig.dev.json
+/home/fallgamlet/Projects/ITI/net_tech_cource/tcp-dotnet/Server/bin/Debug/net5.0/Server.dll
+/home/fallgamlet/Projects/ITI/net_tech_cource/tcp-dotnet/Server/bin/Debug/net5.0/ref/Server.dll
+/home/fallgamlet/Projects/ITI/net_tech_cource/tcp-dotnet/Server/bin/Debug/net5.0/Server.pdb
+/home/fallgamlet/Projects/ITI/net_tech_cource/tcp-dotnet/Server/obj/Debug/net5.0/Server.csproj.AssemblyReference.cache
+/home/fallgamlet/Projects/ITI/net_tech_cource/tcp-dotnet/Server/obj/Debug/net5.0/Server.GeneratedMSBuildEditorConfig.editorconfig
+/home/fallgamlet/Projects/ITI/net_tech_cource/tcp-dotnet/Server/obj/Debug/net5.0/Server.AssemblyInfoInputs.cache
+/home/fallgamlet/Projects/ITI/net_tech_cource/tcp-dotnet/Server/obj/Debug/net5.0/Server.AssemblyInfo.cs
+/home/fallgamlet/Projects/ITI/net_tech_cource/tcp-dotnet/Server/obj/Debug/net5.0/Server.csproj.CoreCompileInputs.cache
+/home/fallgamlet/Projects/ITI/net_tech_cource/tcp-dotnet/Server/obj/Debug/net5.0/Server.dll
+/home/fallgamlet/Projects/ITI/net_tech_cource/tcp-dotnet/Server/obj/Debug/net5.0/ref/Server.dll
+/home/fallgamlet/Projects/ITI/net_tech_cource/tcp-dotnet/Server/obj/Debug/net5.0/Server.pdb
+/home/fallgamlet/Projects/ITI/net_tech_cource/tcp-dotnet/Server/obj/Debug/net5.0/Server.genruntimeconfig.cache
