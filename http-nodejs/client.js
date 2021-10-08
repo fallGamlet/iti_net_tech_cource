@@ -8,8 +8,7 @@ const options = {
   path: '/some/path/segments/',
   headers: {
 	  "Some-Header": 'test'
-  },
-  body: "Some body from client"
+  }
 };
 const request = http.request(options, (socket) => {
   console.log('got connected');
@@ -22,5 +21,5 @@ const request = http.request(options, (socket) => {
   });
 })
 
-request.write("Example body from client");
+request.write("/\(^^)/\ This is request  body from client");
 request.end();
